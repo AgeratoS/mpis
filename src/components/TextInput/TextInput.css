@@ -1,0 +1,76 @@
+.TextInput
+{
+  position: relative;
+  width: 100%;
+}
+
+.TextInput__label
+{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  transition: all .1s ease-in;
+  opacity: .4;
+  font-size: .87rem;
+  color: #EFEEEE;
+}
+
+.TextInput_active .TextInput__label
+{
+  top: -7px;
+  font-size: .7rem;
+  opacity: 1;
+}
+
+.TextInput__input
+{
+  padding: 10px 15px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  position: relative;
+  z-index: 10;
+  background: none;
+  display: block;
+  width: 100%;
+  color: #EFEEEE;
+  box-sizing: border-box;
+  transition: border-bottom-color .2s ease-in;
+}
+
+.TextInput__input_error
+{
+  border-bottom-color: #F26627;
+}
+
+.TextInput__input_ok
+{
+  border-bottom-color: #98D7D1;
+}
+
+.TextInput__errorOutput
+{
+  color: #F26627;
+  font-size: .8rem;
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+}
+
+.fade-appear
+{
+  opacity: .01;
+}
+
+.fade-appear.fade-appear-active
+{
+  opacity: 1;
+}
+
+.TextInput__errorArea-enter-active
+{
+  opacity: 1;
+}

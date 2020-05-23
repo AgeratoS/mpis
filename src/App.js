@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+//Импорт необходимых библиотек
+import {Provider} from 'react-redux';
+import Zoom from 'react-reveal/Zoom';
+// Импорт кастомных компонентов
+import InitialForm from './components/InitialForm/InitialForm.js';
+
+// Импорт redux-компонентов
+import {store} from './stores/ModelStore/ModelStore.js';
 
 function App() {
+  function handleSubmit(values)
+  {
+    console.log(values);
+  }
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="App__inner">
+        <div class="App__InitialFormOuter">
+          <Provider store={store}>
+            <Zoom>
+              <InitialForm className="App__InitialForm" onSubmit={handleSubmit}/>
+            </Zoom>
+          </Provider>
+        </div>
+      </div>
     </div>
   );
 }

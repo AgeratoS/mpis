@@ -1,0 +1,42 @@
+.InitialForm__grid
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 40px;
+  column-gap: 60px;
+}
+
+.InitialForm__TextInput
+{
+  grid-column: span 1;
+}
+
+.InitialForm__TextInput_long
+{
+  grid-column: span 2;
+}
+
+.InitialForm__send
+{
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid #EFEEEE;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  background: transparent;
+  display: inline-block;
+  color: #EFEEEE;
+  grid-column: span 2;
+  padding: 10px 40px;
+  width: 100%;
+  transition: all .2s ease-in;
+}
+
+.InitialForm__send:hover
+{
+  background-color: #EFEEEE;
+  color: #325D79;
+  cursor: pointer;
+}
