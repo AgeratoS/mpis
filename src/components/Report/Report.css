@@ -1,0 +1,48 @@
+.Report
+{
+  background-color: #EFEEEE;
+  padding: 30px;
+  position: relative;
+}
+
+.Report__close
+{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  background: none;
+  font-size: 2rem;
+  outline: none;
+  color: #F9A26C;
+}
+
+.Report__close:hover
+{
+  cursor: pointer;
+}
+
+.Report__header
+{
+  padding: 20px 0;
+}
+
+.Report__title
+{
+  color: #325D79;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+
+.Report__data
+{
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Report__value
+{
+  margin-bottom: 15px;
+}
