@@ -53,7 +53,7 @@ class App extends Component {
     minTimeRequest = parseInt(minTimeRequest);
     maxTimeRequest = parseInt(maxTimeRequest);
     volume = parseInt(volume);
-    probably = parseFloat(probably);
+    probably = parseFloat(probably.replace(",", "."));
     timeConnect = parseInt(timeConnect);
     minTimeDoneRequest = parseInt(minTimeDoneRequest);
     maxTimeDoneRequest = parseInt(maxTimeDoneRequest);
