@@ -21,13 +21,13 @@ const renderField = ({
   }
 ) => {
   let classes = "";
-  if (error)
+  if (error && touched)
     classes += " TextInput__input_error";
   else
     classes += " TextInput__input_ok";
   return (<>
       <input className={"TextInput__input" + classes} {...input} placeholder={label} type={type} />
-      {error && errOut(error) }
+      {error && touched && errOut(error) }
     </>)
 }
 

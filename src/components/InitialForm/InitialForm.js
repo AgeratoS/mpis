@@ -82,7 +82,7 @@ const validate = values => {
 
 let InitialForm = (props) =>
 {
-  const {error, handleSubmit, className, pristine, submitting} = props;
+  const {error, handleSubmit, className, pristine, submitting, touched} = props;
 
 
   return (
